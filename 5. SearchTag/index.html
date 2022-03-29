@@ -19,7 +19,9 @@
     <script>
         const btnSearch = document.querySelector('.btn.search__btn');
         btnSearch.addEventListener('click',function(){
+            //lấy phần tử cha
             this.parentElement.classList.toggle('show');
+            //lấy phần tử liền kề phía trước
             this.previousElementSibling.focus();
         })
     </script>
